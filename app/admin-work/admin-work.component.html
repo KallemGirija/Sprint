@@ -1,0 +1,24 @@
+<div style="width: 50%;background-color: rgb(246, 125, 82);">
+    <form style="width: 50%;margin-left: 25%;" (ngSubmit)=" onSubmitBill() " class="form-horizontal" #myForm="ngForm" >
+        <div class="mb-3">
+            <label class="form-label">Bill Id</label>
+            <input type="text" class="form-control" [(ngModel)]="b.billId" id="billId" name="billId">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Item Count</label>
+            <input type="text" class="form-control" [(ngModel)]="b.itemCount" id="itemCount" name="itemCount">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Gross Bill Amount</label>
+            <input type="text" class="form-control" [(ngModel)]="b.grossBillAmount" id="grossBillAmount" name="grossBillAmount">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Gst Amount</label>
+            <input type="text" class="form-control" [(ngModel)]="b.gstAmount" id="gstAmount" name="gstAmount">
+
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+</div>
+<br>
